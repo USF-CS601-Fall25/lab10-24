@@ -1,0 +1,7 @@
+Fill in code in class Printer.
+
+Multiple user threads print documents.
+A technician refills paper when it runs out.
+Printers must wait until paper is available.
+The technician notifies waiting printers after refilling.
+

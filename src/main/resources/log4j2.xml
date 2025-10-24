@@ -1,0 +1,18 @@
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[Console] %m%n"/>
+        </Console>
+
+        <File name="FileLog" fileName="debug.log" append="false">
+            <PatternLayout pattern="[File] %d{HH:mm:ss.SSS} [%t] %p - %m%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="Console" level="info"/>
+            <AppenderRef ref="FileLog" level="debug"/>
+        </Root>
+    </Loggers>
+</Configuration>
